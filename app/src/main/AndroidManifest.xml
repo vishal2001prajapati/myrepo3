@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.myapplication3">
+<!--    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>-->
 
     <application
         android:allowBackup="true"
@@ -16,7 +17,10 @@
             android:name=".FrameLayout"
             android:exported="false" />
         <activity
-            android:name=".GridLayout"
+            android:name=".ExpandableRecyclerView.ExpandableRecyclerViewActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ExapndableListView.ExpandableListViewActivity"
             android:exported="false" />
         <activity
             android:name=".ConstrainLayout"
@@ -28,11 +32,41 @@
             android:name=".LinearLayout"
             android:exported="false" />
         <activity
+            android:name=".BottomNavigation.BottomNavigationViewActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ViewPagerTwo.ViewPagerTwoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ViewPagerWithRecycler.ViewPagerWithRecyclerActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ViewPager.ViewPagerActivity"
+            android:exported="true" >
+            <intent-filter >
+                <action android:name="android.intent.action.SEND"/>
+                <category android:name="android.intent.category.APP_CONTACTS"/>
+                <data android:mimeType="contact/*"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".GridWithRecycler.GridWithRecycler"
+            android:exported="false" />
+        <activity
+            android:name=".RecyclerView.RecyclerView"
+            android:exported="false" />
+        <activity
+            android:name=".GridLayout"
+            android:exported="false" />
+        <activity
             android:name=".DiffrentLayout"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.SEND" />
             </intent-filter>
         </activity>
         <activity

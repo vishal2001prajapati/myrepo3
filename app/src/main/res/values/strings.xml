@@ -66,4 +66,7 @@
     <string name="framelayout">Framelayout</string>
     <string name="gridlayout">Gridlayout</string>
     <string name="relativelayout">Relativelayout</string>
+    <string name="enter_detail">Enter Detail</string>
+    <string name="fragment">Fragment</string>
+    <string name="select_image">Select Image</string>
 </resources>

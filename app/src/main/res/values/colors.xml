@@ -13,4 +13,5 @@
     <color name="text_background">#d99773</color>
     <color name="backgtound_xml">#dfc9de</color>
     <color name="bottomnavigation_color">#809b94</color>
+    <color name="backgroundColor">#FF8A65</color>
 </resources>
