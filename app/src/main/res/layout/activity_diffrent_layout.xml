@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DiffrentLayout">
+
+    <Button
+        android:id="@+id/btnlinear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:text="@string/linearlayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/relative"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:text="@string/relative_layout"
+        app:layout_constraintTop_toBottomOf="@+id/btnlinear" />
+
+    <Button
+        android:id="@+id/constrain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:text="@string/constrain_layout"
+        app:layout_constraintTop_toBottomOf="@+id/relative" />
+
+    <Button
+        android:id="@+id/grid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:text="@string/grid_layout"
+        app:layout_constraintTop_toBottomOf="@+id/constrain" />
+
+    <Button
+        android:id="@+id/frame"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:text="@string/frame_layout"
+        app:layout_constraintTop_toBottomOf="@+id/grid" />
+
+    <Button
+        android:id="@+id/item_listView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:text="@string/listview"
+        app:layout_constraintTop_toBottomOf="@+id/frame" />
+
+    <Button
+        android:id="@+id/btn_recycler"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:text="@string/recyclerview"
+        app:layout_constraintTop_toBottomOf="@+id/item_listView" />
+
+    <Button
+        android:id="@+id/btn_gridrecycler"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:text="@string/gridrecycler"
+        app:layout_constraintTop_toBottomOf="@+id/btn_recycler" />
+
+    <Button
+        android:id="@+id/btn_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:text="@string/viewpager"
+        app:layout_constraintTop_toBottomOf="@+id/btn_gridrecycler" />
+
+    <Button
+        android:id="@+id/btn_viewpagerrecycler"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:text="@string/viewpager_recycler"
+        app:layout_constraintTop_toBottomOf="@+id/btn_viewpager" />
+
+    <Button
+        android:id="@+id/btn_viewpagertwo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:text="@string/viewpager_two"
+        app:layout_constraintTop_toBottomOf="@+id/btn_viewpagerrecycler" />
+
+    <Button
+        android:id="@+id/btn_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:text="@string/navigationview"
+        app:layout_constraintTop_toBottomOf="@+id/btn_viewpagertwo" />
+</androidx.constraintlayout.widget.ConstraintLayout>

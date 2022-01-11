@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".ConstrainLayout">
+
+    <TextView
+        android:id="@+id/con_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="10dp"
+        android:text="@string/enter_feedback_deatils_to_send_to_the_devloper"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/con_edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/edittext_bordar"
+        android:hint="@string/your_name"
+        android:inputType="textPersonName"
+        android:padding="10dp"
+        android:paddingStart="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/con_text" />
+
+    <EditText
+        android:id="@+id/con_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/edittext_bordar"
+        android:hint="@string/your_email"
+        android:padding="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/con_edit" />
+
+    <Spinner
+        android:id="@+id/con_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:background="@color/white"
+        app:layout_constraintTop_toBottomOf="@+id/con_name" />
+
+    <ImageView
+        android:layout_width="20dp"
+        android:layout_height="17dp"
+        android:layout_marginTop="-30dp"
+        android:background="@android:color/transparent"
+        android:src="@drawable/spinner_icon"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.959"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/con_spinner" />
+
+    <EditText
+        android:id="@+id/con_feedback"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/edittext_bordar"
+        android:hint="@string/feedback_deatil_is"
+        android:inputType="textMultiLine"
+        android:lines="5"
+        android:paddingStart="5dp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/con_spinner" />
+
+    <CheckBox
+        android:id="@+id/con_check"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20sp"
+        android:layout_marginEnd="10dp"
+        android:text="Would you like an email response?"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/con_feedback" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/send"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10sp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/edittext_bordar"
+        android:text="@string/send_feedback"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/con_check" />
+</androidx.constraintlayout.widget.ConstraintLayout>

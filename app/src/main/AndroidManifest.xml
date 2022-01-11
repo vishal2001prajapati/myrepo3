@@ -10,7 +10,49 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MyApplication3">
         <activity
-            android:name=".MainActivity"
+            android:name=".BottomNavigation.BottomNavigationViewActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ViewPagerTwo.ViewPagerTwoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ViewPagerWithRecycler.ViewPagerWithRecyclerActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ViewPager.ViewPagerActivity"
+            android:exported="false" />
+        <activity
+            android:name=".GridWithRecycler.GridRecyclerActivity"
+            android:exported="false" />
+        <activity
+            android:name=".GridWithRecycler.GridWithRecycler"
+            android:exported="false" />
+        <activity
+            android:name=".RecyclerView.RecyclerView"
+            android:exported="false" />
+        <activity
+            android:name=".ListView.ListViewActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ListView"
+            android:exported="false" />
+        <activity
+            android:name=".FrameLayout"
+            android:exported="false" />
+        <activity
+            android:name=".GridLayout"
+            android:exported="false" />
+        <activity
+            android:name=".ConstrainLayout"
+            android:exported="false" />
+        <activity
+            android:name=".RelativeLayout"
+            android:exported="false" />
+        <activity
+            android:name=".LinearLayout"
+            android:exported="false" />
+        <activity
+            android:name=".DiffrentLayout"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -18,6 +60,12 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".DifferentLayoutActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="false" />
     </application>
 
 </manifest>
