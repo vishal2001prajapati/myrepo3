@@ -9,6 +9,33 @@
     <string name="male">Male</string>
     <string name="female">Female</string>
     <string name="dark_mode">Dark Mode:</string>
-    <string name="toastmessage">This is a OK Button</string>
+    <string name="linearlayout">LinearLayout</string>
+    <string name="enter_feedback_deatils_to_send_to_the_devloper">Enter feedback details to send to the developer:</string>
+    <string name="your_name">Your Name</string>
+    <string name="your_email">Your Email</string>
+    <string name="feedback_deatil_is">Feedback Detail is..</string>
+    <string name="send_feedback">Send Feedback</string>
+    <string name="relative_layout">Relative Layout</string>
+    <string name="button">Button</string>
+    <string name="frame_layout">Frame Layout</string>
+    <string name="grid_layout">Grid Layout</string>
+    <string name="constrain_layout">Constrain Layout</string>
+    <string name="this_is_a_bookmark">this is a bookmark</string>
+    <string name="bookmark">Bookmark</string>
+    <string name="click">click</string>
+    <string name="toastmessage">Button is Click</string>
     <string name="this_is_a_custom_toast">This is a Custom Toast</string>
+    <string name="would_you_like_an_email_response">Would you like an email response?</string>
+    <string name="framelayout">FrameLayout</string>
+    <string name="constrainlayout">ConstrainLayout</string>
+    <string name="gridlayout">GridLayout</string>
+   <string name="relativelayout">RelativeLayout</string>
+    <string-array name="country">
+        <item>Select</item>
+        <item>India</item>
+        <item>Greece</item>
+        <item>Denmark</item>
+        <item>Iran</item>
+        <item>Brazil</item>
+    </string-array>
 </resources>
