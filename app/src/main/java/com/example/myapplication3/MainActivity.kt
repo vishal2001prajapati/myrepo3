@@ -5,11 +5,27 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import java.time.chrono.HijrahChronology
+import android.view.Gravity
+import android.view.LayoutInflater
+import android.view.View
+import android.widget.Button
+import android.widget.TextView
+import android.widget.Toast
 
 class MainActivity : AppCompatActivity() {
+    lateinit var button: Button
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+        button = findViewById(R.id.button_ok)
+        button.setOnClickListener {
+            Toast.makeText(this, getString(R.string.toastmessage), Toast.LENGTH_LONG).show()
+        }
+        val toast: TextView = findViewById(R.id.textview)
+        toast.setOnClickListener {
+            showtoast()
+        }
+
         //simple message display
         Log.d("hello", "hello..")
         //variable declaration
@@ -381,34 +397,45 @@ class MainActivity : AppCompatActivity() {
         Log.d("hash", "hash2 == hash 3 ${hash2.equals(hash3)}")
         Log.d("hash", "hash1 == hash 3 ${hash1.equals(hash3)}")
         //sealed
-        val o = MyClass.car()
-        o.print()
+        val objCar = MyClass.car()
+        objCar.print()
         //interface ob
-        var obj5 = calcu()
-        obj5.add()
+        var calcutore = Calcutore()
+        calcutore.add()
     }
-}
 
-//sealed class ->third party can't access
+    private fun showtoast() {
+        val inflater: LayoutInflater = layoutInflater
+        val view: View = inflater.inflate(R.layout.custom_toast, findViewById(R.id.custom))
+        val toast: Toast = Toast(this)
+        toast.setGravity(Gravity.BOTTOM or Gravity.FILL_HORIZONTAL, ZERO, ZERO)
+        toast.duration = Toast.LENGTH_LONG
+        toast.view = view
+        toast.show()
+    }
+
+    //sealed class ->third party can't access
 //abstract & constructor is private
-sealed class MyClass {
-    class car {
-        fun print() {
-            Log.d("sealed class", "car run fast")
+    sealed class MyClass {
+        class car {
+            fun print() {
+                Log.d("sealed class", "car run fast")
+            }
         }
     }
-}
 
-class calcu : add, Sub {
-    override fun add() {
-        var x: Int = 10
-        var y: Int = 12
-        var c: Int = 0
-        c = x + y
-        val d = Log.d("interface", c.toString())
+    class Calcutore : add, Sub {
+        override fun add() {
+            val x: Int = 10
+            val y: Int = 12
+            var c: Int = 0
+            c = x + y
+            val d = Log.d("interface", c.toString())
+        }
+
+        override fun sub() {
+            Log.d("interface", "this is sub")
+        }
     }
 
-    override fun sub() {
-        Log.d("interface", "this is sub")
-    }
 }

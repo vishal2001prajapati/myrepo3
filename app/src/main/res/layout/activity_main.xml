@@ -6,13 +6,161 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/textview"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
+        android:background="@color/background_color"
+        android:text="@string/simform"
+        android:textColor="#FFEA00"
+        android:textSize="30sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.442"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.04" />
 
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/edittext"
+        android:layout_width="380dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="28dp"
+        android:background="@drawable/edittext_bordar"
+        android:hint="@string/enter_something"
+        android:inputType="textEmailAddress"
+        android:paddingStart="20dp"
+        app:layout_constraintTop_toBottomOf="@+id/textview"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="15dp" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button_ok"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="160dp"
+        android:background="@drawable/ripple_effect"
+        android:paddingStart="15dp"
+        android:paddingEnd="20dp"
+        android:text="@string/ok"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <androidx.appcompat.widget.AppCompatCheckBox
+        android:id="@+id/chech_eng"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="12dp"
+        android:padding="2dp"
+        android:paddingStart="15dp"
+        android:paddingTop="20dp"
+        android:text="@string/english"
+        android:textColor="@color/text_color"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edittext" />
+
+    <androidx.appcompat.widget.AppCompatCheckBox
+        android:id="@+id/chech_hindi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="12dp"
+        android:padding="2dp"
+        android:paddingStart="15dp"
+        android:paddingTop="20dp"
+        android:text="@string/hindi"
+        android:textColor="@color/text_color"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/chech_eng" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/text_gender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/select_gender"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.268"
+        app:layout_constraintStart_toEndOf="@+id/chech_eng"
+        app:layout_constraintTop_toBottomOf="@+id/edittext" />
+
+    <RadioGroup
+        android:id="@+id/radio_gr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@+id/text_gender"
+        tools:ignore="MissingConstraints">
+
+        <androidx.appcompat.widget.AppCompatRadioButton
+            android:id="@+id/text_male"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="160dp"
+            android:checked="false"
+            android:text="@string/male"
+            android:textColor="@color/text_color"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <androidx.appcompat.widget.AppCompatRadioButton
+            android:id="@+id/text_female"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/female"
+            android:textColor="@color/text_color"
+            android:textSize="20sp"
+            tools:layout_editor_absoluteX="163dp"
+            tools:layout_editor_absoluteY="247dp" />
+
+    </RadioGroup>
+
+    <androidx.appcompat.widget.AppCompatToggleButton
+        android:id="@+id/toggle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@color/background_color"
+        android:textOff="Yes"
+        android:textOn="No"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/chech_hindi"
+        tools:ignore="MissingConstraints" />
+
+    <androidx.appcompat.widget.SwitchCompat
+        android:id="@+id/swich"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/dark_mode"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toggle" />
+
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:id="@+id/img"
+        android:layout_width="85dp"
+        android:layout_height="68dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginBottom="8dp"
+        android:src="@drawable/android_icon"
+        app:layout_constraintBottom_toTopOf="@+id/button_ok"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/swich" />
 </androidx.constraintlayout.widget.ConstraintLayout>
