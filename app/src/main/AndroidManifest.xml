@@ -52,6 +52,12 @@
             android:name=".GridLayout"
             android:exported="false" />
         <activity
+            android:name=".ActivityAndFragment.LifeCycleActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ActivityAndFragment.FragmentLifecycleActivity"
+            android:exported="false" />
+        <activity
             android:name=".DiffrentLayout"
             android:exported="true">
             <intent-filter>
