@@ -1,3 +1,14 @@
 <resources>
     <string name="app_name">My Application3</string>
+    <string name="simform">Simform</string>
+    <string name="enter_something">Enter Something</string>
+    <string name="ok">OK</string>
+    <string name="english">English</string>
+    <string name="hindi">Hindi</string>
+    <string name="select_gender">Select Gender:</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="dark_mode">Dark Mode:</string>
+    <string name="toastmessage">This is a OK Button</string>
+    <string name="this_is_a_custom_toast">This is a Custom Toast</string>
 </resources>
