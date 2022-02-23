@@ -7,7 +7,7 @@
     tools:context=".MainActivity">
 
     <androidx.appcompat.widget.AppCompatTextView
-        android:id="@+id/textview"
+        android:id="@+id/textview_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="@color/background_color"
@@ -23,7 +23,7 @@
         app:layout_constraintVertical_bias="0.04" />
 
     <androidx.appcompat.widget.AppCompatEditText
-        android:id="@+id/edittext"
+        android:id="@+id/edittext_text"
         android:layout_width="380dp"
         android:layout_height="48dp"
         android:layout_marginTop="28dp"
@@ -31,12 +31,12 @@
         android:hint="@string/enter_something"
         android:inputType="textEmailAddress"
         android:paddingStart="20dp"
-        app:layout_constraintTop_toBottomOf="@+id/textview"
+        app:layout_constraintTop_toBottomOf="@+id/textview_text"
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="15dp" />
 
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/button_ok"
+        android:id="@+id/btn_ok"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="24dp"
@@ -54,7 +54,7 @@
         tools:ignore="SpeakableTextPresentCheck" />
 
     <androidx.appcompat.widget.AppCompatCheckBox
-        android:id="@+id/chech_eng"
+        android:id="@+id/chechbox_english"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
@@ -67,10 +67,10 @@
         android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/edittext" />
+        app:layout_constraintTop_toBottomOf="@+id/edittext_text" />
 
     <androidx.appcompat.widget.AppCompatCheckBox
-        android:id="@+id/chech_hindi"
+        android:id="@+id/chechkbox_hindi"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
@@ -83,7 +83,7 @@
         android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/chech_eng" />
+        app:layout_constraintTop_toBottomOf="@+id/chechbox_english" />
 
     <androidx.appcompat.widget.AppCompatTextView
         android:id="@+id/text_gender"
@@ -95,11 +95,11 @@
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.268"
-        app:layout_constraintStart_toEndOf="@+id/chech_eng"
-        app:layout_constraintTop_toBottomOf="@+id/edittext" />
+        app:layout_constraintStart_toEndOf="@+id/chechbox_english"
+        app:layout_constraintTop_toBottomOf="@+id/edittext_text" />
 
     <RadioGroup
-        android:id="@+id/radio_gr"
+        android:id="@+id/radiobtn_group"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
@@ -107,7 +107,7 @@
         tools:ignore="MissingConstraints">
 
         <androidx.appcompat.widget.AppCompatRadioButton
-            android:id="@+id/text_male"
+            android:id="@+id/radiobtn_male"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="160dp"
@@ -118,7 +118,7 @@
             android:textStyle="bold" />
 
         <androidx.appcompat.widget.AppCompatRadioButton
-            android:id="@+id/text_female"
+            android:id="@+id/radiobtn_female"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/female"
@@ -126,11 +126,10 @@
             android:textSize="20sp"
             tools:layout_editor_absoluteX="163dp"
             tools:layout_editor_absoluteY="247dp" />
-
     </RadioGroup>
 
     <androidx.appcompat.widget.AppCompatToggleButton
-        android:id="@+id/toggle"
+        android:id="@+id/btn_toggle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
@@ -138,11 +137,11 @@
         android:textOff="Yes"
         android:textOn="No"
         android:textStyle="bold"
-        app:layout_constraintTop_toBottomOf="@+id/chech_hindi"
+        app:layout_constraintTop_toBottomOf="@+id/chechkbox_hindi"
         tools:ignore="MissingConstraints" />
 
     <androidx.appcompat.widget.SwitchCompat
-        android:id="@+id/swich"
+        android:id="@+id/btn_swich"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
@@ -150,17 +149,28 @@
         android:text="@string/dark_mode"
         android:textSize="20sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/toggle" />
+        app:layout_constraintTop_toBottomOf="@+id/btn_toggle" />
 
-    <androidx.appcompat.widget.AppCompatImageButton
-        android:id="@+id/img"
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/imageview"
         android:layout_width="85dp"
         android:layout_height="68dp"
         android:layout_marginTop="28dp"
         android:layout_marginBottom="8dp"
         android:src="@drawable/android_icon"
-        app:layout_constraintBottom_toTopOf="@+id/button_ok"
+        app:layout_constraintBottom_toTopOf="@+id/btn_ok"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/swich" />
+        app:layout_constraintTop_toBottomOf="@+id/btn_swich" />
+
+    <include
+        android:id="@+id/btn_include"
+        layout="@layout/merge_tag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_ok" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

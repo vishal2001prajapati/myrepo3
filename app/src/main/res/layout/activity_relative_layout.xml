@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".RelativeLayout">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/relative_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:text="@string/enter_feedback_deatils_to_send_to_the_devloper"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/edit_relative"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/edittext_bordar"
+        android:hint="@string/your_name"
+        android:inputType="textPersonName"
+        android:padding="10dp"
+        android:paddingStart="10dp"
+        android:paddingEnd="5dp"
+        android:textStyle="bold" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/relative_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/edit_relative"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="45dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/edittext_bordar"
+        android:hint="@string/your_email"
+        android:inputType="textEmailAddress"
+        android:padding="10dp"
+        android:paddingStart="10dp"
+        android:paddingEnd="5dp"
+        android:textStyle="bold" />
+
+    <androidx.appcompat.widget.AppCompatSpinner
+        android:id="@+id/relative_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/relative_email"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@color/white" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="81dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/relative_spinner"
+        android:layout_alignBottom="@+id/relative_spinner"
+        android:layout_gravity="end"
+        android:layout_marginStart="331dp"
+        android:layout_marginTop="-30dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="14dp"
+        android:layout_toEndOf="@+id/relative_spinner"
+        android:background="@android:color/transparent"
+        android:src="@drawable/spinner_icon" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/realative_feedback"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/relative_spinner"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/edittext_bordar"
+        android:hint="@string/feedback_deatil_is"
+        android:inputType="textMultiLine"
+        android:lines="5"
+        android:paddingStart="10dp"
+        android:textStyle="bold" />
+
+    <androidx.appcompat.widget.AppCompatCheckBox
+        android:id="@+id/realative_check"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/realative_feedback"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20sp"
+        android:layout_marginEnd="10dp"
+        android:text="Would you like an email response?"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_send"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/realative_check"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10sp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/edittext_bordar"
+        android:text="@string/send_feedback"
+        android:textStyle="bold" />
+</RelativeLayout>
