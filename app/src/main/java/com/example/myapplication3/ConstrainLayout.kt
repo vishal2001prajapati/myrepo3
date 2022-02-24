@@ -13,7 +13,7 @@ class ConstrainLayout : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_constrain_layout)
-        spinnercon = findViewById(R.id.con_spinner)
+        spinnercon = findViewById(R.id.spinner_constrain)
         val actionBar = supportActionBar
         actionBar?.apply {
             title = getString(R.string.constrainlayout)

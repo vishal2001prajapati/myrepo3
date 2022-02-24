@@ -5,17 +5,18 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.MenuItem
 import android.widget.Button
+import com.example.myapplication3.ListView.ListViewActivity
 
 class DiffrentLayout : AppCompatActivity() {
 
-    lateinit var btn_linear: Button
-    lateinit var btn_relative: Button
-    lateinit var btn_constrain: Button
-    lateinit var btn_grid: Button
-    lateinit var btn_frame: Button
+    lateinit var btnlinear: Button
+    lateinit var btnrelative: Button
+    lateinit var btnconstrain: Button
+    lateinit var btngrid: Button
+    lateinit var btnframe: Button
+    lateinit var btnlist: Button
 
     override fun onCreate(savedInstanceState: Bundle?) {
-
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_diffrent_layout)
         val actionBar = supportActionBar
@@ -23,28 +24,33 @@ class DiffrentLayout : AppCompatActivity() {
             title = "Layouts"
             setDisplayHomeAsUpEnabled(true)
         }
-        btn_linear = findViewById(R.id.btn_linear)
-        btn_relative = findViewById(R.id.btn_relative)
-        btn_constrain = findViewById(R.id.btn_constrain)
-        btn_grid = findViewById(R.id.btn_grid)
-        btn_frame = findViewById(R.id.btn_frame)
-        btn_frame.setOnClickListener {
+        btnlinear = findViewById(R.id.btn_linear)
+        btnrelative = findViewById(R.id.btn_relative)
+        btnconstrain = findViewById(R.id.btn_constrain)
+        btngrid = findViewById(R.id.btn_grid)
+        btnframe = findViewById(R.id.btn_frame)
+        btnlist = findViewById(R.id.item_listView)
+        btnlist.setOnClickListener {
+            val intent = Intent(this, ListViewActivity::class.java)
+            startActivity(intent)
+        }
+        btnframe.setOnClickListener {
             val intent = Intent(this, FrameLayout::class.java)
             startActivity(intent)
         }
-        btn_grid.setOnClickListener {
+        btngrid.setOnClickListener {
             val intent = Intent(this, GridLayout::class.java)
             startActivity(intent)
         }
-        btn_relative.setOnClickListener {
+        btnrelative.setOnClickListener {
             val intent = Intent(this, RelativeLayout::class.java)
             startActivity(intent)
         }
-        btn_linear.setOnClickListener {
+        btnlinear.setOnClickListener {
             val intent = Intent(this, LinearLayout::class.java)
             startActivity(intent)
         }
-        btn_constrain.setOnClickListener {
+        btnconstrain.setOnClickListener {
             val intent = Intent(this, ConstrainLayout::class.java)
             startActivity(intent)
         }
