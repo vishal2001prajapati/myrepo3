@@ -9,7 +9,7 @@
     <string name="male">Male</string>
     <string name="female">Female</string>
     <string name="dark_mode">Dark Mode:</string>
-    <string name="linearlayout">LinearLayout</string>
+    <string name="linearlayout">Linear Layout</string>
     <string name="enter_feedback_deatils_to_send_to_the_devloper">Enter feedback details to send to the developer:</string>
     <string name="your_name">Your Name</string>
     <string name="your_email">Your Email</string>
@@ -23,13 +23,14 @@
     <string name="this_is_a_bookmark">this is a bookmark</string>
     <string name="bookmark">Bookmark</string>
     <string name="click">click</string>
-    <string name="toastmessage">Button is Click</string>
-    <string name="this_is_a_custom_toast">This is a Custom Toast</string>
-    <string name="would_you_like_an_email_response">Would you like an email response?</string>
-    <string name="framelayout">FrameLayout</string>
-    <string name="constrainlayout">ConstrainLayout</string>
-    <string name="gridlayout">GridLayout</string>
-   <string name="relativelayout">RelativeLayout</string>
+    <string name="listview">ListView</string>
+    <string name="item1">Item1</string>
+    <string name="itemsubtext">ItemSubtext</string>
+    <string name="recyclerview">RecyclerView</string>
+    <string name="name">Name</string>
+    <string name="toastmessage">This is a OK Button</string>
+    <string name="gridrecycler">GridRecycler</string>
+    <string name="text">Text</string>
     <string-array name="country">
         <item>Select</item>
         <item>India</item>
@@ -38,4 +39,31 @@
         <item>Iran</item>
         <item>Brazil</item>
     </string-array>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="camera_fragment">Camera Fragment</string>
+    <string name="call_fragment">Call Fragment</string>
+    <string name="chat_fragment">Chat Fragment</string>
+    <string name="viewpager">ViewPager</string>
+    <string name="slide1">Slide1</string>
+    <string name="viewpager_recycler">ViewPager Recycler</string>
+    <string name="viewpager_two">ViewPager Two</string>
+    <string name="my_profile">My Profile</string>
+    <string name="navigationview">NavigationView</string>
+    <string name="search">Search</string>
+    <string name="home">Home</string>
+    <string name="state">State</string>
+    <string name="expandable_listview">Expandable ListView</string>
+    <string name="language_c">C is a general-purpose, procedural computer programming language supporting structured programming, lexical variable scope, and recursion, with a static type system. By design, C provides constructs that map efficiently to typical machine instructions.</string>
+    <string name="language_java">Java is a high-level, class-based, object-oriented programming language that is designed to have as few implementation dependencies as possible.</string>
+    <string name="language_python">Python is an interpreted high-level general-purpose programming language. Its design philosophy emphasizes code readability with its use of significant indentation. Its language constructs and object-oriented approach aim to help programmers write clear, logical code for small- and large-scale projects.</string>
+    <string name="language_kotlin">Kotlin is a cross-platform, statically typed, general-purpose programming language with type inference. Kotlin is designed to interoperate fully with Java, and the JVM version of Kotlin</string>
+    <string name="description_text">description_text</string>
+    <string name="expandable_recyclerview">ExpandableRecyclerView</string>
+    <string name="would_you_like_an_email_response">would_you_like_an_email_response</string>
+    <string name="this_is_a_custom_toast">this_is_a_custom_toast</string>
+    <string name="constrainlayout">ConstrainLayout</string>
+    <string name="framelayout">Framelayout</string>
+    <string name="gridlayout">Gridlayout</string>
+    <string name="relativelayout">Relativelayout</string>
 </resources>

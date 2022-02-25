@@ -9,11 +9,11 @@ import android.widget.Spinner
 class LinearLayout : AppCompatActivity() {
 
     lateinit var spinner: Spinner
-    override fun onCreate(savedInstanceState: Bundle?) {
 
+    override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_linear_layout)
-        spinner = findViewById(R.id.spinner)
+        spinner = findViewById(R.id.item_spinner)
         val actionBar = supportActionBar
         actionBar?.apply {
             title = getString(R.string.linearlayout)
