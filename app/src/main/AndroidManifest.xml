@@ -58,12 +58,20 @@
             android:name=".ActivityAndFragment.FragmentLifecycleActivity"
             android:exported="false" />
         <activity
-            android:name=".DiffrentLayout"
-            android:exported="true">
+            android:name=".Intent.FirstIntentActivity"
+            android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity
+            android:name=".Intent.SecondIntentActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DiffrentLayout"
+            android:exported="false">
+
         </activity>
         <activity
             android:name=".MainActivity"
