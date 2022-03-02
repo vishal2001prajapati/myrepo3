@@ -9,7 +9,7 @@ import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.myapplication3.R
 
-class GridWithRecyclerActivity : AppCompatActivity() {
+class GridWithRecycler : AppCompatActivity() {
 
     lateinit var recyclerView: RecyclerView
     var arrayLis: ArrayList<GridModel> = ArrayList()
@@ -18,16 +18,14 @@ class GridWithRecyclerActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_grid_with_recycler)
         val actionBar = supportActionBar
-        actionBar?.apply {
-            title = getString(R.string.Grdiwithrecyclerview)
-            setDisplayHomeAsUpEnabled(true)
-        }
+        actionBar?.title = getString(R.string.gridrecycler)
+        actionBar?.setDisplayHomeAsUpEnabled(true)
         recyclerView = findViewById(R.id.grid_recycler)
         arrayLis.apply {
             add(GridModel("Antim", R.drawable.antim))
             add(GridModel("Chichore", R.drawable.chichore))
             add(GridModel("Keshri", R.drawable.keshri))
-            add(GridModel("3 idoit's", R.drawable.idoits))
+            add(GridModel("3idoit's", R.drawable.idoits))
             add(GridModel("Shershah", R.drawable.shershah))
             add(GridModel("Tiger Zinda Hai", R.drawable.tiger))
             add(GridModel("K.G.F.", R.drawable.kgf))
@@ -37,8 +35,8 @@ class GridWithRecyclerActivity : AppCompatActivity() {
         }
         val adpter = GridAdapter(arrayLis)
         recyclerView.apply {
-            itemAnimator = DefaultItemAnimator()
-            adapter = adpter
+            this.itemAnimator = DefaultItemAnimator()
+            this.adapter = adpter
         }
         recyclerView.addItemDecoration(DividerItemDecoration(this, GridLayoutManager.VERTICAL))
     }

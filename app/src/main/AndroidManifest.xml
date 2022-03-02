@@ -13,6 +13,9 @@
             android:name=".ListView.ListViewActivity"
             android:exported="false" />
         <activity
+            android:name=".BottomNavigation.BottomNavigationViewActivity"
+            android:exported="false" />
+        <activity
             android:name=".FrameLayout"
             android:exported="false" />
         <activity
