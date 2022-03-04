@@ -16,9 +16,6 @@
             android:name=".FrameLayout"
             android:exported="false" />
         <activity
-            android:name=".GridLayout"
-            android:exported="false" />
-        <activity
             android:name=".ConstrainLayout"
             android:exported="false" />
         <activity
@@ -26,6 +23,12 @@
             android:exported="false" />
         <activity
             android:name=".LinearLayout"
+            android:exported="false" />
+        <activity
+            android:name=".RecyclerView.RecyclerView"
+            android:exported="false" />
+        <activity
+            android:name=".GridLayout"
             android:exported="false" />
         <activity
             android:name=".DiffrentLayout"
