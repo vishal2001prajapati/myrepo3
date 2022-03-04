@@ -7,18 +7,10 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
 import android.widget.EditText
-import android.widget.Toast
 import androidx.core.os.bundleOf
 import androidx.fragment.app.setFragmentResult
-import androidx.fragment.app.setFragmentResultListener
-import androidx.viewpager.widget.ViewPager
-import com.example.myapplication3.ONE
 import com.example.myapplication3.R
-import com.example.myapplication3.ViewPager.Communicator
-import com.example.myapplication3.ViewPager.ViewPageAdapter
 import com.example.myapplication3.ViewPager.ViewPagerActivity
-import kotlinx.android.synthetic.main.activity_bottom_navigation_view.*
-import kotlinx.android.synthetic.main.activity_view_pager.*
 
 class CallFragment : Fragment() {
 

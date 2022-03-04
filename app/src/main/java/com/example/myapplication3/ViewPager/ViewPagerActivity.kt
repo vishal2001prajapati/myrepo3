@@ -1,18 +1,13 @@
 package com.example.myapplication3.ViewPager
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.MenuItem
-import android.widget.TableLayout
-import android.widget.Toast
+import androidx.appcompat.app.AppCompatActivity
 import androidx.viewpager.widget.ViewPager
 import com.example.myapplication3.Fragments.CallFragment
-import com.example.myapplication3.Fragments.ChatFragment
 import com.example.myapplication3.ONE
 import com.example.myapplication3.R
-import com.example.myapplication3.TWo
 import com.google.android.material.tabs.TabLayout
-import kotlinx.android.synthetic.main.activity_view_pager.*
 
 class ViewPagerActivity : AppCompatActivity() {
 
@@ -28,8 +23,8 @@ class ViewPagerActivity : AppCompatActivity() {
         }
         viewpager = findViewById(R.id.viewPager)
         tabLayout = findViewById(R.id.tabLayout)
-        viewPager.adapter = ViewPageAdapter(supportFragmentManager)
-        tabLayout.setupWithViewPager(viewPager)
+        viewpager.adapter = ViewPageAdapter(supportFragmentManager)
+        tabLayout.setupWithViewPager(viewpager)
         supportFragmentManager.beginTransaction().replace(R.id.viewPager, CallFragment()).commit()
 
     }
