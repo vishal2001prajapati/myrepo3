@@ -66,4 +66,5 @@
     <string name="framelayout">Framelayout</string>
     <string name="gridlayout">Gridlayout</string>
     <string name="relativelayout">Relativelayout</string>
+    <string name="Grdiwithrecyclerview">Grid Using Recycler</string>
 </resources>

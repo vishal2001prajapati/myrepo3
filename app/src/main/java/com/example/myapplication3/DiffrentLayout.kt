@@ -5,6 +5,9 @@ import android.os.Bundle
 import android.view.MenuItem
 import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
+import com.example.myapplication3.ExapndableListView.ExpandableListViewActivity
+import com.example.myapplication3.ExpandableRecyclerView.ExpandableRecyclerViewActivity
+import com.example.myapplication3.GridWithRecycler.GridWithRecyclerActivity
 import com.example.myapplication3.ListView.ListViewActivity
 import com.example.myapplication3.RecyclerView.RecyclerView
 
@@ -16,14 +19,14 @@ class DiffrentLayout : AppCompatActivity() {
     lateinit var btngrid: Button
     lateinit var btnframe: Button
     lateinit var btnlist: Button
-    lateinit var recyclerViewbutton: Button
+    lateinit var recyclerViewButton: Button
     lateinit var gridrecycler: Button
     lateinit var btnviewpager: Button
     lateinit var btnviewpagerrecycler: Button
     lateinit var btnviewpagertwo: Button
     lateinit var btnnavigation: Button
     lateinit var btnexpandablelistview: Button
-
+    lateinit var btnExpandableRecyclerView: Button
     override fun onCreate(savedInstanceState: Bundle?) {
 
         super.onCreate(savedInstanceState)
@@ -39,19 +42,43 @@ class DiffrentLayout : AppCompatActivity() {
         btngrid = findViewById(R.id.btn_grid)
         btnframe = findViewById(R.id.btn_frame)
         btnlist = findViewById(R.id.item_listView)
-        recyclerViewbutton = findViewById(R.id.btn_recycler)
+        recyclerViewButton = findViewById(R.id.btn_recycler)
         gridrecycler = findViewById(R.id.btn_gridrecycler)
         btnviewpager = findViewById(R.id.btn_viewpager)
         btnviewpagerrecycler = findViewById(R.id.btn_viewpagerrecycler)
         btnviewpagertwo = findViewById(R.id.btn_viewpagertwo)
         btnnavigation = findViewById(R.id.btn_navigation)
         btnexpandablelistview = findViewById(R.id.btn_expandablelistview)
+        recyclerViewButton = findViewById(R.id.btn_recycler)
+        gridrecycler = findViewById(R.id.btn_gridrecycler)
+        btnviewpager = findViewById(R.id.btn_viewpager)
+        btnviewpagerrecycler = findViewById(R.id.btn_viewpagerrecycler)
+        btnviewpagertwo = findViewById(R.id.btn_viewpagertwo)
+        btnnavigation = findViewById(R.id.btn_navigation)
+        btnexpandablelistview = findViewById(R.id.btn_expandablelistview)
+        btnExpandableRecyclerView = findViewById(R.id.btn_expandablerecyclerview)
+        btnExpandableRecyclerView.setOnClickListener {
+            val intent = Intent(this, ExpandableRecyclerViewActivity::class.java)
+            startActivity(intent)
+        }
+        btnexpandablelistview.setOnClickListener {
+            val intent = Intent(this, ExpandableRecyclerViewActivity::class.java)
+            startActivity(intent)
+        }
+        btnexpandablelistview.setOnClickListener {
+            val intent = Intent(this, ExpandableListViewActivity::class.java)
+            startActivity(intent)
+        }
         btnlist.setOnClickListener {
             val intent = Intent(this, ListViewActivity::class.java)
             startActivity(intent)
         }
-        recyclerViewbutton.setOnClickListener {
+        recyclerViewButton.setOnClickListener {
             val intent = Intent(this, RecyclerView::class.java)
+            startActivity(intent)
+        }
+        gridrecycler.setOnClickListener {
+            val intent = Intent(this, GridWithRecyclerActivity::class.java)
             startActivity(intent)
         }
         btnframe.setOnClickListener {
