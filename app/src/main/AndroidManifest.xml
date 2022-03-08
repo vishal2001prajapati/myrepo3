@@ -16,6 +16,15 @@
             android:name=".FrameLayout"
             android:exported="false" />
         <activity
+            android:name=".ExpandableRecyclerView.ExpandableRecyclerViewActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ExapndableListView.ExpandableListViewActivity"
+            android:exported="false" />
+        <activity
+            android:name=".GridWithRecycler.GridWithRecyclerActivity"
+            android:exported="false" />
+        <activity
             android:name=".ConstrainLayout"
             android:exported="false" />
         <activity
