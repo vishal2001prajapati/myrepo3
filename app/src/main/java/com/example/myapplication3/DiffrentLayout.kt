@@ -10,6 +10,9 @@ import com.example.myapplication3.ExpandableRecyclerView.ExpandableRecyclerViewA
 import com.example.myapplication3.GridWithRecycler.GridWithRecyclerActivity
 import com.example.myapplication3.ListView.ListViewActivity
 import com.example.myapplication3.RecyclerView.RecyclerView
+import com.example.myapplication3.ViewPager.ViewPagerActivity
+import com.example.myapplication3.ViewPagerTwo.ViewPagerTwoActivity
+import com.example.myapplication3.ViewPagerWithRecycler.ViewPagerWithRecyclerActivity
 
 class DiffrentLayout : AppCompatActivity() {
 
@@ -27,6 +30,8 @@ class DiffrentLayout : AppCompatActivity() {
     lateinit var btnnavigation: Button
     lateinit var btnexpandablelistview: Button
     lateinit var btnExpandableRecyclerView: Button
+    lateinit var btnViewPagerRecyclerView: Button
+
     override fun onCreate(savedInstanceState: Bundle?) {
 
         super.onCreate(savedInstanceState)
@@ -52,11 +57,30 @@ class DiffrentLayout : AppCompatActivity() {
         recyclerViewButton = findViewById(R.id.btn_recycler)
         gridrecycler = findViewById(R.id.btn_gridrecycler)
         btnviewpager = findViewById(R.id.btn_viewpager)
+        btnviewpagertwo = findViewById(R.id.btn_viewpagertwo)
+        btnnavigation = findViewById(R.id.btn_navigation)
+        btnexpandablelistview = findViewById(R.id.btn_expandablelistview)
+        recyclerViewButton = findViewById(R.id.btn_recycler)
+        gridrecycler = findViewById(R.id.btn_gridrecycler)
+        btnviewpager = findViewById(R.id.btn_viewpager)
         btnviewpagerrecycler = findViewById(R.id.btn_viewpagerrecycler)
         btnviewpagertwo = findViewById(R.id.btn_viewpagertwo)
         btnnavigation = findViewById(R.id.btn_navigation)
         btnexpandablelistview = findViewById(R.id.btn_expandablelistview)
         btnExpandableRecyclerView = findViewById(R.id.btn_expandablerecyclerview)
+        btnViewPagerRecyclerView = findViewById(R.id.btn_viewpagerrecycler)
+        btnViewPagerRecyclerView.setOnClickListener {
+            val intent = Intent(this, ViewPagerWithRecyclerActivity::class.java)
+            startActivity(intent)
+        }
+        btnviewpager.setOnClickListener {
+            val intent = Intent(this, ViewPagerActivity::class.java)
+            startActivity(intent)
+        }
+        btnviewpagertwo.setOnClickListener {
+            val intent = Intent(this, ViewPagerTwoActivity::class.java)
+            startActivity(intent)
+        }
         btnExpandableRecyclerView.setOnClickListener {
             val intent = Intent(this, ExpandableRecyclerViewActivity::class.java)
             startActivity(intent)
