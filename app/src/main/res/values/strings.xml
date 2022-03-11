@@ -67,4 +67,9 @@
     <string name="gridlayout">Gridlayout</string>
     <string name="relativelayout">Relativelayout</string>
     <string name="Grdiwithrecyclerview">Grid Using Recycler</string>
+    <string name="viewPager">ViewPager</string>
+    <string name="camera">Camera</string>
+    <string name="chat">Chat</string>
+    <string name="call">Call</string>
+    <string name="status">Status</string>
 </resources>

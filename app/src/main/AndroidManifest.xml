@@ -25,6 +25,15 @@
             android:name=".GridWithRecycler.GridWithRecyclerActivity"
             android:exported="false" />
         <activity
+            android:name=".ViewPager.ViewPagerActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ViewPagerTwo.ViewPagerTwoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ViewPagerWithRecycler.ViewPagerWithRecyclerActivity"
+            android:exported="false" />
+        <activity
             android:name=".ConstrainLayout"
             android:exported="false" />
         <activity
