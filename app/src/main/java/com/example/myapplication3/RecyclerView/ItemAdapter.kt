@@ -14,8 +14,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.myapplication3.R
 import kotlinx.android.synthetic.main.item_recyclerview.view.*
 
-class ItemAdapter(val itemList: ArrayList<RecycleModel>) :
-    RecyclerView.Adapter<ItemAdapter.MyviewHolder>() {
+class ItemAdapter(val itemList: ArrayList<RecycleModel>): RecyclerView.Adapter<ItemAdapter.MyviewHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MyviewHolder {
         val viewHolder = LayoutInflater.from(parent.context).inflate(R.layout.item_recyclerview, parent, false)

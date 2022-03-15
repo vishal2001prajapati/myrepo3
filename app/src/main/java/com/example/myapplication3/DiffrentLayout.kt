@@ -5,6 +5,7 @@ import android.os.Bundle
 import android.view.MenuItem
 import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
+import com.example.myapplication3.BottomNavigation.BottomNavigationViewActivity
 import com.example.myapplication3.ExapndableListView.ExpandableListViewActivity
 import com.example.myapplication3.ExpandableRecyclerView.ExpandableRecyclerViewActivity
 import com.example.myapplication3.GridWithRecycler.GridWithRecyclerActivity
@@ -31,6 +32,7 @@ class DiffrentLayout : AppCompatActivity() {
     lateinit var btnexpandablelistview: Button
     lateinit var btnExpandableRecyclerView: Button
     lateinit var btnViewPagerRecyclerView: Button
+    lateinit var btnBottomNavigationView: Button
 
     override fun onCreate(savedInstanceState: Bundle?) {
 
@@ -38,7 +40,7 @@ class DiffrentLayout : AppCompatActivity() {
         setContentView(R.layout.activity_diffrent_layout)
         val actionBar = supportActionBar
         actionBar?.apply {
-            title = "Layouts"
+            title = getString(R.string.layout)
             setDisplayHomeAsUpEnabled(true)
         }
         btnlinear = findViewById(R.id.btn_linear)
@@ -69,6 +71,11 @@ class DiffrentLayout : AppCompatActivity() {
         btnexpandablelistview = findViewById(R.id.btn_expandablelistview)
         btnExpandableRecyclerView = findViewById(R.id.btn_expandablerecyclerview)
         btnViewPagerRecyclerView = findViewById(R.id.btn_viewpagerrecycler)
+        btnBottomNavigationView = findViewById(R.id.btn_bottomNavigationView)
+        btnBottomNavigationView.setOnClickListener {
+            val intent = Intent(this, BottomNavigationViewActivity::class.java)
+            startActivity(intent)
+        }
         btnViewPagerRecyclerView.setOnClickListener {
             val intent = Intent(this, ViewPagerWithRecyclerActivity::class.java)
             startActivity(intent)
