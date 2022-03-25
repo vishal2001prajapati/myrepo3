@@ -5,6 +5,7 @@ import android.os.Bundle
 import android.view.MenuItem
 import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
+import com.example.myapplication3.ActivityAndFragment.LifeCycleActivity
 import com.example.myapplication3.BottomNavigation.BottomNavigationViewActivity
 import com.example.myapplication3.ExapndableListView.ExpandableListViewActivity
 import com.example.myapplication3.ExpandableRecyclerView.ExpandableRecyclerViewActivity
@@ -33,6 +34,7 @@ class DiffrentLayout : AppCompatActivity() {
     lateinit var btnExpandableRecyclerView: Button
     lateinit var btnViewPagerRecyclerView: Button
     lateinit var btnBottomNavigationView: Button
+    lateinit var btnLifeCycle: Button
 
     override fun onCreate(savedInstanceState: Bundle?) {
 
@@ -72,6 +74,11 @@ class DiffrentLayout : AppCompatActivity() {
         btnExpandableRecyclerView = findViewById(R.id.btn_expandablerecyclerview)
         btnViewPagerRecyclerView = findViewById(R.id.btn_viewpagerrecycler)
         btnBottomNavigationView = findViewById(R.id.btn_bottomNavigationView)
+        btnLifeCycle = findViewById(R.id.lifeCycle)
+        btnLifeCycle.setOnClickListener {
+            val intent = Intent(this, LifeCycleActivity::class.java)
+            startActivity(intent)
+        }
         btnBottomNavigationView.setOnClickListener {
             val intent = Intent(this, BottomNavigationViewActivity::class.java)
             startActivity(intent)
