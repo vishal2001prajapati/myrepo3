@@ -75,4 +75,17 @@
     <string name="layout">Layouts</string>
     <string name="bottomnavigayionview">BottomNavigayionView</string>
     <string name="fragment">fragment</string>
+    <string name="enter_data">enter_data</string>
+    <string name="explicit_intent">explicit_intent</string>
+    <string name="implicit_intent">implicit_intent</string>
+    <string name="pending_intent">pending_intent</string>
+    <string name="first_fragment_label">First Fragmentt</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="description">A control that displays one or more buttons along the bottom edge of your interface.</string>
+    <string name="notificationTitle">Notification Title</string>
+    <string name="notificationDescription">Notification Description</string>
+    <string name="exampleTitle">Example Title</string>
+    <string name="exampleDescription">Example Description</string>
+    <string name="data">Data</string>
+    <string name="youTube">https://www.youtube.com/</string>
 </resources>
