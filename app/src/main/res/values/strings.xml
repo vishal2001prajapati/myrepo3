@@ -75,4 +75,6 @@
     <string name="layout">Layouts</string>
     <string name="bottomnavigayionview">BottomNavigayionView</string>
     <string name="fragment">fragment</string>
+    <string name="searchName">Search Name</string>
+    <string name="webview">WebView</string>
 </resources>

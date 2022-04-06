@@ -15,6 +15,7 @@ import com.example.myapplication3.RecyclerView.RecyclerView
 import com.example.myapplication3.ViewPager.ViewPagerActivity
 import com.example.myapplication3.ViewPagerTwo.ViewPagerTwoActivity
 import com.example.myapplication3.ViewPagerWithRecycler.ViewPagerWithRecyclerActivity
+import com.example.myapplication3.wbview.WebViewActivity
 
 class DiffrentLayout : AppCompatActivity() {
 
@@ -35,6 +36,7 @@ class DiffrentLayout : AppCompatActivity() {
     lateinit var btnViewPagerRecyclerView: Button
     lateinit var btnBottomNavigationView: Button
     lateinit var btnLifeCycle: Button
+    lateinit var btnWebView: Button
 
     override fun onCreate(savedInstanceState: Bundle?) {
 
@@ -75,6 +77,11 @@ class DiffrentLayout : AppCompatActivity() {
         btnViewPagerRecyclerView = findViewById(R.id.btn_viewpagerrecycler)
         btnBottomNavigationView = findViewById(R.id.btn_bottomNavigationView)
         btnLifeCycle = findViewById(R.id.lifeCycle)
+        btnWebView = findViewById(R.id.webView)
+        btnWebView.setOnClickListener {
+            val intent = Intent(this, WebViewActivity::class.java)
+            startActivity(intent)
+        }
         btnLifeCycle.setOnClickListener {
             val intent = Intent(this, LifeCycleActivity::class.java)
             startActivity(intent)
