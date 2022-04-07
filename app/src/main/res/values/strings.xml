@@ -75,10 +75,21 @@
     <string name="layout">Layouts</string>
     <string name="bottomnavigayionview">BottomNavigayionView</string>
     <string name="fragment">fragment</string>
-    <string name="enter_data">enter_data</string>
-    <string name="explicit_intent">explicit_intent</string>
-    <string name="implicit_intent">implicit_intent</string>
-    <string name="pending_intent">pending_intent</string>
+    <string name="lifecycle">LifeCycle</string>
+    <string name="api_calling">API Calling</string>
+    <string name="enter_email_address">Enter Email Address</string>
+    <string name="enter_password">Enter Password</string>
+    <string name="submit">Submit</string>
+    <string name="apiwithrecyclerview">APIWithRecyclerView</string>
+    <string name="firstname">firstName:</string>
+    <string name="lastname">lastName:</string>
+    <string name="email">Email:</string>
+    <string name="cityslicka">cityslicka</string>
+    <string name="eve_holt_reqres_in">eve.holt@reqres.in</string>
+    <string name="enter_data">Enter Data</string>
+    <string name="explicit_intent">Explicit Intent</string>
+    <string name="implicit_intent">Implicit Intent</string>
+    <string name="pending_intent">Pending Intent</string>
     <string name="first_fragment_label">First Fragmentt</string>
     <string name="second_fragment_label">Second Fragment</string>
     <string name="description">A control that displays one or more buttons along the bottom edge of your interface.</string>
@@ -88,4 +99,6 @@
     <string name="exampleDescription">Example Description</string>
     <string name="data">Data</string>
     <string name="youTube">https://www.youtube.com/</string>
+    <string name="retrofitwithget">RetrofitWithGet</string>
+
 </resources>
