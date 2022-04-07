@@ -95,4 +95,10 @@
     <string name="firstname">firstName:</string>
     <string name="lastname">lastName:</string>
     <string name="email">Email:</string>
+    <string name="api_calling">API Calling</string>
+    <string name="enter_email_address">Enter Email Address</string>
+    <string name="enter_password">Enter Password</string>
+    <string name="submit">Submit</string>
+    <string name="cityslicka">cityslicka</string>
+    <string name="eve_holt_reqres_in">eve.holt@reqres.in</string>
 </resources>
