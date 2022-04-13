@@ -15,6 +15,7 @@ import com.example.myapplication3.RecyclerView.RecyclerView
 import com.example.myapplication3.ViewPager.ViewPagerActivity
 import com.example.myapplication3.ViewPagerTwo.ViewPagerTwoActivity
 import com.example.myapplication3.ViewPagerWithRecycler.ViewPagerWithRecyclerActivity
+import com.example.myapplication3.apiwithretrofit.RetrofitActivity
 
 class DiffrentLayout : AppCompatActivity() {
 
@@ -35,7 +36,7 @@ class DiffrentLayout : AppCompatActivity() {
     lateinit var btnViewPagerRecyclerView: Button
     lateinit var btnBottomNavigationView: Button
     lateinit var btnLifeCycle: Button
-
+    lateinit var btnRetrofit: Button
     override fun onCreate(savedInstanceState: Bundle?) {
 
         super.onCreate(savedInstanceState)
@@ -75,6 +76,12 @@ class DiffrentLayout : AppCompatActivity() {
         btnViewPagerRecyclerView = findViewById(R.id.btn_viewpagerrecycler)
         btnBottomNavigationView = findViewById(R.id.btn_bottomNavigationView)
         btnLifeCycle = findViewById(R.id.lifeCycle)
+        btnRetrofit = findViewById(R.id.retrofit)
+
+        btnRetrofit.setOnClickListener {
+            val intent = Intent(this, RetrofitActivity::class.java)
+            startActivity(intent)
+        }
         btnLifeCycle.setOnClickListener {
             val intent = Intent(this, LifeCycleActivity::class.java)
             startActivity(intent)
