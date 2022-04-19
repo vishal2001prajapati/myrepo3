@@ -88,6 +88,10 @@
     <string name="exampleDescription">Example Description</string>
     <string name="data">Data</string>
     <string name="youTube">https://www.youtube.com/</string>
+    <string name="firstnameofuser">FirstNameOfUser</string>
+    <string name="lastnameofuser">LastnameOfUser</string>
+    <string name="emailofuser">EmailOfUser</string>
+    <string name="listuserofretrofit">listUserOfRetrofit</string>
     <string name="searchName">Search Name</string>
     <string name="webview">WebView</string>
     <string name="lifecycle">LifeCycle</string>
