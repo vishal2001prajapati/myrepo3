@@ -15,6 +15,9 @@ import com.example.myapplication3.RecyclerView.RecyclerView
 import com.example.myapplication3.ViewPager.ViewPagerActivity
 import com.example.myapplication3.ViewPagerTwo.ViewPagerTwoActivity
 import com.example.myapplication3.ViewPagerWithRecycler.ViewPagerWithRecyclerActivity
+import com.example.myapplication3.apicalling.ApiMainActivity
+import com.example.myapplication3.apiwithrecyclerview.APIWithRecyclerViewActivity
+import com.example.myapplication3.retrofit.RetrofitActivity
 
 class DiffrentLayout : AppCompatActivity() {
 
@@ -35,6 +38,9 @@ class DiffrentLayout : AppCompatActivity() {
     lateinit var btnViewPagerRecyclerView: Button
     lateinit var btnBottomNavigationView: Button
     lateinit var btnLifeCycle: Button
+    lateinit var btnApi: Button
+    lateinit var btnAPIRecyclerView: Button
+    lateinit var btnRetrofitWithGet: Button
 
     override fun onCreate(savedInstanceState: Bundle?) {
 
@@ -75,6 +81,21 @@ class DiffrentLayout : AppCompatActivity() {
         btnViewPagerRecyclerView = findViewById(R.id.btn_viewpagerrecycler)
         btnBottomNavigationView = findViewById(R.id.btn_bottomNavigationView)
         btnLifeCycle = findViewById(R.id.lifeCycle)
+        btnApi = findViewById(R.id.apiCalling)
+        btnAPIRecyclerView = findViewById(R.id.apiWithPostCalling)
+        btnRetrofitWithGet = findViewById(R.id.retrofitWithGet)
+        btnRetrofitWithGet.setOnClickListener {
+            val intent = Intent(this, RetrofitActivity::class.java)
+            startActivity(intent)
+        }
+        btnAPIRecyclerView.setOnClickListener {
+            val intent = Intent(this, APIWithRecyclerViewActivity::class.java)
+            startActivity(intent)
+        }
+        btnApi.setOnClickListener {
+            val intent = Intent(this, ApiMainActivity::class.java)
+            startActivity(intent)
+        }
         btnLifeCycle.setOnClickListener {
             val intent = Intent(this, LifeCycleActivity::class.java)
             startActivity(intent)

@@ -155,8 +155,35 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
             android:layout_marginEnd="16dp"
-            android:text="LifeCycle"
+            android:text="@string/lifecycle"
             app:layout_constraintTop_toBottomOf="@+id/btn_bottomNavigationView" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/apiCalling"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:text="@string/api_calling"
+            app:layout_constraintTop_toBottomOf="@+id/lifeCycle" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/apiWithPostCalling"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:text="@string/api_calling"
+            app:layout_constraintTop_toBottomOf="@+id/apiCalling" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/retrofitWithGet"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:text="@string/retrofitwithget"
+            app:layout_constraintTop_toBottomOf="@+id/apiCalling" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
