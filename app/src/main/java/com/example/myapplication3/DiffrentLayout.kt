@@ -15,6 +15,7 @@ import com.example.myapplication3.RecyclerView.RecyclerView
 import com.example.myapplication3.ViewPager.ViewPagerActivity
 import com.example.myapplication3.ViewPagerTwo.ViewPagerTwoActivity
 import com.example.myapplication3.ViewPagerWithRecycler.ViewPagerWithRecyclerActivity
+import com.example.myapplication3.wbview.WebViewActivity
 
 class DiffrentLayout : AppCompatActivity() {
 
@@ -35,6 +36,8 @@ class DiffrentLayout : AppCompatActivity() {
     lateinit var btnViewPagerRecyclerView: Button
     lateinit var btnBottomNavigationView: Button
     lateinit var btnLifeCycle: Button
+    lateinit var btnWebView: Button
+    lateinit var btnAPIRecyclerView: Button
 
     override fun onCreate(savedInstanceState: Bundle?) {
 
@@ -45,36 +48,26 @@ class DiffrentLayout : AppCompatActivity() {
             title = getString(R.string.layout)
             setDisplayHomeAsUpEnabled(true)
         }
-        btnlinear = findViewById(R.id.btn_linear)
-        btnrelative = findViewById(R.id.btn_relative)
-        btnconstrain = findViewById(R.id.btn_constrain)
-        btngrid = findViewById(R.id.btn_grid)
-        btnframe = findViewById(R.id.btn_frame)
-        btnlist = findViewById(R.id.item_listView)
-        recyclerViewButton = findViewById(R.id.btn_recycler)
-        gridrecycler = findViewById(R.id.btn_gridrecycler)
-        btnviewpager = findViewById(R.id.btn_viewpager)
-        btnviewpagerrecycler = findViewById(R.id.btn_viewpagerrecycler)
-        btnviewpagertwo = findViewById(R.id.btn_viewpagertwo)
-        btnnavigation = findViewById(R.id.btn_navigation)
-        btnexpandablelistview = findViewById(R.id.btn_expandablelistview)
-        recyclerViewButton = findViewById(R.id.btn_recycler)
-        gridrecycler = findViewById(R.id.btn_gridrecycler)
-        btnviewpager = findViewById(R.id.btn_viewpager)
-        btnviewpagertwo = findViewById(R.id.btn_viewpagertwo)
-        btnnavigation = findViewById(R.id.btn_navigation)
-        btnexpandablelistview = findViewById(R.id.btn_expandablelistview)
-        recyclerViewButton = findViewById(R.id.btn_recycler)
-        gridrecycler = findViewById(R.id.btn_gridrecycler)
-        btnviewpager = findViewById(R.id.btn_viewpager)
-        btnviewpagerrecycler = findViewById(R.id.btn_viewpagerrecycler)
-        btnviewpagertwo = findViewById(R.id.btn_viewpagertwo)
-        btnnavigation = findViewById(R.id.btn_navigation)
-        btnexpandablelistview = findViewById(R.id.btn_expandablelistview)
-        btnExpandableRecyclerView = findViewById(R.id.btn_expandablerecyclerview)
-        btnViewPagerRecyclerView = findViewById(R.id.btn_viewpagerrecycler)
-        btnBottomNavigationView = findViewById(R.id.btn_bottomNavigationView)
+        btnlinear = findViewById(R.id.btnLinear)
+        btnrelative = findViewById(R.id.btnRecycler)
+        btnconstrain = findViewById(R.id.btnConstrain)
+        btngrid = findViewById(R.id.btnGrid)
+        btnframe = findViewById(R.id.btnFrame)
+        btnlist = findViewById(R.id.itemListView)
+        recyclerViewButton = findViewById(R.id.btnRecycler)
+        gridrecycler = findViewById(R.id.btnGridRecycler)
+        btnviewpager = findViewById(R.id.btnViewPager)
+        btnviewpagerrecycler = findViewById(R.id.btnViewPagerRecycler)
+        btnviewpagertwo = findViewById(R.id.btnViewPagerTwo)
+        btnnavigation = findViewById(R.id.btnNavigation)
+        btnexpandablelistview = findViewById(R.id.btnExpandableListView)
         btnLifeCycle = findViewById(R.id.lifeCycle)
+        btnWebView = findViewById(R.id.webView)
+        btnAPIRecyclerView = findViewById(R.id.apiWithRecyclerView)
+        btnWebView.setOnClickListener {
+            val intent = Intent(this, WebViewActivity::class.java)
+            startActivity(intent)
+        }
         btnLifeCycle.setOnClickListener {
             val intent = Intent(this, LifeCycleActivity::class.java)
             startActivity(intent)

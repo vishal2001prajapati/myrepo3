@@ -14,7 +14,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.myapplication3.R
 import kotlinx.android.synthetic.main.item_recyclerview.view.*
 
-class ItemAdapter(val itemList: ArrayList<RecycleModel>): RecyclerView.Adapter<ItemAdapter.MyviewHolder>() {
+class ItemAdapter(var itemList: ArrayList<RecycleModel>) : RecyclerView.Adapter<ItemAdapter.MyviewHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MyviewHolder {
         val viewHolder = LayoutInflater.from(parent.context).inflate(R.layout.item_recyclerview, parent, false)
@@ -25,7 +25,7 @@ class ItemAdapter(val itemList: ArrayList<RecycleModel>): RecyclerView.Adapter<I
     override fun onBindViewHolder(holder: MyviewHolder, position: Int) {
         itemList[position].images?.let { holder.itemimg.setImageResource(it) }
         holder.apply {
-            itemtext.text = itemList[position].str_text
+            itemtext.text = itemList[position].strText
             itemcheck.apply {
                 isChecked = itemList[position].chechbox
                 setOnClickListener {
@@ -38,6 +38,11 @@ class ItemAdapter(val itemList: ArrayList<RecycleModel>): RecyclerView.Adapter<I
 
     override fun getItemCount(): Int {
         return itemList.size
+    }
+
+    fun filterData(newItemList: ArrayList<RecycleModel>) {
+        itemList = newItemList
+        notifyDataSetChanged()
     }
 
     class MyviewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
