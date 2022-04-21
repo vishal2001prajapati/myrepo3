@@ -7,3 +7,5 @@ const val THREE = 3
 const val HUNDRED = 100
 const val CHANNELID = "i.app.noffification"
 const val  NOTIFICATIONID = 101
+const val MAINURLOFAPI = "/api/users/2"
+const val BASEURLOFPUTMETHOD = "https://reqres.in/"

@@ -88,4 +88,12 @@
     <string name="exampleDescription">Example Description</string>
     <string name="data">Data</string>
     <string name="youTube">https://www.youtube.com/</string>
+    <string name="enter_name">Enter Name</string>
+    <string name="job">Job</string>
+    <string name="submit">Submit</string>
+    <string name="lifecycle">LifeCycle</string>
+    <string name="putmethod">PutMethod</string>
+    <string name="response_text">Response Text</string>
+    <string name="username">userName</string>
+    <string name="userjob">userJob</string>
 </resources>
