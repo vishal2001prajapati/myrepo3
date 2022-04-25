@@ -22,7 +22,7 @@ class RecyclerView : AppCompatActivity() {
         val list = ArrayList<RecycleModel>()
         var adapter: ItemAdapter? = null
         list.apply {
-            add(RecycleModel(R.drawable.bookmark, "Raj"))
+            add(RecycleModel(R.drawable.bookmark, "Raj",false))
             add(RecycleModel(R.drawable.camera, "Vinayak", false))
             add(RecycleModel(R.drawable.bookmark, "Darshan", false))
             add(RecycleModel(R.drawable.camera, "Pradip", false))
