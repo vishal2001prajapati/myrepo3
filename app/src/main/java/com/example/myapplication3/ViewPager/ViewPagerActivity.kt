@@ -21,7 +21,7 @@ class ViewPagerActivity : AppCompatActivity() {
         }
         viewpager = findViewById(R.id.view_pager)
         tabLayout = findViewById(R.id.tab_layout)
-        viewpager.adapter = ViewPageAdapter(supportFragmentManager)
+        viewpager.adapter = ViewPageAdapter(supportFragmentManager,this)
         tabLayout.setupWithViewPager(viewpager)
     }
 

@@ -60,7 +60,6 @@
     <string name="language_kotlin">Kotlin is a cross-platform, statically typed, general-purpose programming language with type inference. Kotlin is designed to interoperate fully with Java, and the JVM version of Kotlin</string>
     <string name="description_text">description_text</string>
     <string name="expandable_recyclerview">ExpandableRecyclerView</string>
-    <string name="would_you_like_an_email_response">would_you_like_an_email_response</string>
     <string name="this_is_a_custom_toast">this_is_a_custom_toast</string>
     <string name="constrainlayout">ConstrainLayout</string>
     <string name="framelayout">Framelayout</string>
@@ -95,4 +94,6 @@
     <string name="firstname">firstName:</string>
     <string name="lastname">lastName:</string>
     <string name="email">Email:</string>
+    <string name="would_you_like_an_email_response">Would you like an email response?</string>
+    <string name="intent">Intent</string>
 </resources>
